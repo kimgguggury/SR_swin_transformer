@@ -1,0 +1,31 @@
+cat > .gitignore <<'EOF'
+# --- datasets / data ---
+datasets/
+drct/data/
+
+# --- outputs / logs ---
+results/
+experiments/
+tb_logger/
+wandb/
+runs/
+*.log
+
+# --- pretrained / weights ---
+*.pth
+*.pt
+*.ckpt
+
+# --- python cache / build ---
+__pycache__/
+*.py[cod]
+.eggs/
+drct.egg-info/
+
+# --- editors ---
+.vscode/
+.idea/
+
+# --- notebooks checkpoints ---
+.ipynb_checkpoints/
+EOF

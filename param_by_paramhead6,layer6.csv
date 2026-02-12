@@ -1,0 +1,467 @@
+﻿param_name,module,shape,num_params,trainable
+conv_first.weight,conv_first,"[180, 3, 3, 3]",4860,True
+conv_first.bias,conv_first,[180],180,True
+patch_embed.norm.weight,patch_embed.norm,[180],180,True
+patch_embed.norm.bias,patch_embed.norm,[180],180,True
+layers.0.swin1.norm1.weight,layers.0.swin1.norm1,[180],180,True
+layers.0.swin1.norm1.bias,layers.0.swin1.norm1,[180],180,True
+layers.0.swin1.attn.relative_position_bias_table,layers.0.swin1.attn,"[961, 6]",5766,True
+layers.0.swin1.attn.qkv.weight,layers.0.swin1.attn.qkv,"[540, 180]",97200,True
+layers.0.swin1.attn.qkv.bias,layers.0.swin1.attn.qkv,[540],540,True
+layers.0.swin1.attn.proj.weight,layers.0.swin1.attn.proj,"[180, 180]",32400,True
+layers.0.swin1.attn.proj.bias,layers.0.swin1.attn.proj,[180],180,True
+layers.0.swin1.norm2.weight,layers.0.swin1.norm2,[180],180,True
+layers.0.swin1.norm2.bias,layers.0.swin1.norm2,[180],180,True
+layers.0.swin1.mlp.fc1.weight,layers.0.swin1.mlp.fc1,"[360, 180]",64800,True
+layers.0.swin1.mlp.fc1.bias,layers.0.swin1.mlp.fc1,[360],360,True
+layers.0.swin1.mlp.fc2.weight,layers.0.swin1.mlp.fc2,"[180, 360]",64800,True
+layers.0.swin1.mlp.fc2.bias,layers.0.swin1.mlp.fc2,[180],180,True
+layers.0.adjust1.weight,layers.0.adjust1,"[32, 180, 1, 1]",5760,True
+layers.0.adjust1.bias,layers.0.adjust1,[32],32,True
+layers.0.swin2.norm1.weight,layers.0.swin2.norm1,[212],212,True
+layers.0.swin2.norm1.bias,layers.0.swin2.norm1,[212],212,True
+layers.0.swin2.attn.relative_position_bias_table,layers.0.swin2.attn,"[961, 4]",3844,True
+layers.0.swin2.attn.qkv.weight,layers.0.swin2.attn.qkv,"[636, 212]",134832,True
+layers.0.swin2.attn.qkv.bias,layers.0.swin2.attn.qkv,[636],636,True
+layers.0.swin2.attn.proj.weight,layers.0.swin2.attn.proj,"[212, 212]",44944,True
+layers.0.swin2.attn.proj.bias,layers.0.swin2.attn.proj,[212],212,True
+layers.0.swin2.norm2.weight,layers.0.swin2.norm2,[212],212,True
+layers.0.swin2.norm2.bias,layers.0.swin2.norm2,[212],212,True
+layers.0.swin2.mlp.fc1.weight,layers.0.swin2.mlp.fc1,"[424, 212]",89888,True
+layers.0.swin2.mlp.fc1.bias,layers.0.swin2.mlp.fc1,[424],424,True
+layers.0.swin2.mlp.fc2.weight,layers.0.swin2.mlp.fc2,"[212, 424]",89888,True
+layers.0.swin2.mlp.fc2.bias,layers.0.swin2.mlp.fc2,[212],212,True
+layers.0.adjust2.weight,layers.0.adjust2,"[32, 212, 1, 1]",6784,True
+layers.0.adjust2.bias,layers.0.adjust2,[32],32,True
+layers.0.swin3.norm1.weight,layers.0.swin3.norm1,[244],244,True
+layers.0.swin3.norm1.bias,layers.0.swin3.norm1,[244],244,True
+layers.0.swin3.attn.relative_position_bias_table,layers.0.swin3.attn,"[961, 2]",1922,True
+layers.0.swin3.attn.qkv.weight,layers.0.swin3.attn.qkv,"[732, 244]",178608,True
+layers.0.swin3.attn.qkv.bias,layers.0.swin3.attn.qkv,[732],732,True
+layers.0.swin3.attn.proj.weight,layers.0.swin3.attn.proj,"[244, 244]",59536,True
+layers.0.swin3.attn.proj.bias,layers.0.swin3.attn.proj,[244],244,True
+layers.0.swin3.norm2.weight,layers.0.swin3.norm2,[244],244,True
+layers.0.swin3.norm2.bias,layers.0.swin3.norm2,[244],244,True
+layers.0.swin3.mlp.fc1.weight,layers.0.swin3.mlp.fc1,"[488, 244]",119072,True
+layers.0.swin3.mlp.fc1.bias,layers.0.swin3.mlp.fc1,[488],488,True
+layers.0.swin3.mlp.fc2.weight,layers.0.swin3.mlp.fc2,"[244, 488]",119072,True
+layers.0.swin3.mlp.fc2.bias,layers.0.swin3.mlp.fc2,[244],244,True
+layers.0.adjust3.weight,layers.0.adjust3,"[32, 244, 1, 1]",7808,True
+layers.0.adjust3.bias,layers.0.adjust3,[32],32,True
+layers.0.swin4.norm1.weight,layers.0.swin4.norm1,[276],276,True
+layers.0.swin4.norm1.bias,layers.0.swin4.norm1,[276],276,True
+layers.0.swin4.attn.relative_position_bias_table,layers.0.swin4.attn,"[961, 6]",5766,True
+layers.0.swin4.attn.qkv.weight,layers.0.swin4.attn.qkv,"[828, 276]",228528,True
+layers.0.swin4.attn.qkv.bias,layers.0.swin4.attn.qkv,[828],828,True
+layers.0.swin4.attn.proj.weight,layers.0.swin4.attn.proj,"[276, 276]",76176,True
+layers.0.swin4.attn.proj.bias,layers.0.swin4.attn.proj,[276],276,True
+layers.0.swin4.norm2.weight,layers.0.swin4.norm2,[276],276,True
+layers.0.swin4.norm2.bias,layers.0.swin4.norm2,[276],276,True
+layers.0.swin4.mlp.fc1.weight,layers.0.swin4.mlp.fc1,"[276, 276]",76176,True
+layers.0.swin4.mlp.fc1.bias,layers.0.swin4.mlp.fc1,[276],276,True
+layers.0.swin4.mlp.fc2.weight,layers.0.swin4.mlp.fc2,"[276, 276]",76176,True
+layers.0.swin4.mlp.fc2.bias,layers.0.swin4.mlp.fc2,[276],276,True
+layers.0.adjust4.weight,layers.0.adjust4,"[32, 276, 1, 1]",8832,True
+layers.0.adjust4.bias,layers.0.adjust4,[32],32,True
+layers.0.swin5.norm1.weight,layers.0.swin5.norm1,[308],308,True
+layers.0.swin5.norm1.bias,layers.0.swin5.norm1,[308],308,True
+layers.0.swin5.attn.relative_position_bias_table,layers.0.swin5.attn,"[961, 4]",3844,True
+layers.0.swin5.attn.qkv.weight,layers.0.swin5.attn.qkv,"[924, 308]",284592,True
+layers.0.swin5.attn.qkv.bias,layers.0.swin5.attn.qkv,[924],924,True
+layers.0.swin5.attn.proj.weight,layers.0.swin5.attn.proj,"[308, 308]",94864,True
+layers.0.swin5.attn.proj.bias,layers.0.swin5.attn.proj,[308],308,True
+layers.0.swin5.norm2.weight,layers.0.swin5.norm2,[308],308,True
+layers.0.swin5.norm2.bias,layers.0.swin5.norm2,[308],308,True
+layers.0.swin5.mlp.fc1.weight,layers.0.swin5.mlp.fc1,"[308, 308]",94864,True
+layers.0.swin5.mlp.fc1.bias,layers.0.swin5.mlp.fc1,[308],308,True
+layers.0.swin5.mlp.fc2.weight,layers.0.swin5.mlp.fc2,"[308, 308]",94864,True
+layers.0.swin5.mlp.fc2.bias,layers.0.swin5.mlp.fc2,[308],308,True
+layers.0.adjust5.weight,layers.0.adjust5,"[180, 308, 1, 1]",55440,True
+layers.0.adjust5.bias,layers.0.adjust5,[180],180,True
+layers.1.swin1.norm1.weight,layers.1.swin1.norm1,[180],180,True
+layers.1.swin1.norm1.bias,layers.1.swin1.norm1,[180],180,True
+layers.1.swin1.attn.relative_position_bias_table,layers.1.swin1.attn,"[961, 6]",5766,True
+layers.1.swin1.attn.qkv.weight,layers.1.swin1.attn.qkv,"[540, 180]",97200,True
+layers.1.swin1.attn.qkv.bias,layers.1.swin1.attn.qkv,[540],540,True
+layers.1.swin1.attn.proj.weight,layers.1.swin1.attn.proj,"[180, 180]",32400,True
+layers.1.swin1.attn.proj.bias,layers.1.swin1.attn.proj,[180],180,True
+layers.1.swin1.norm2.weight,layers.1.swin1.norm2,[180],180,True
+layers.1.swin1.norm2.bias,layers.1.swin1.norm2,[180],180,True
+layers.1.swin1.mlp.fc1.weight,layers.1.swin1.mlp.fc1,"[360, 180]",64800,True
+layers.1.swin1.mlp.fc1.bias,layers.1.swin1.mlp.fc1,[360],360,True
+layers.1.swin1.mlp.fc2.weight,layers.1.swin1.mlp.fc2,"[180, 360]",64800,True
+layers.1.swin1.mlp.fc2.bias,layers.1.swin1.mlp.fc2,[180],180,True
+layers.1.adjust1.weight,layers.1.adjust1,"[32, 180, 1, 1]",5760,True
+layers.1.adjust1.bias,layers.1.adjust1,[32],32,True
+layers.1.swin2.norm1.weight,layers.1.swin2.norm1,[212],212,True
+layers.1.swin2.norm1.bias,layers.1.swin2.norm1,[212],212,True
+layers.1.swin2.attn.relative_position_bias_table,layers.1.swin2.attn,"[961, 4]",3844,True
+layers.1.swin2.attn.qkv.weight,layers.1.swin2.attn.qkv,"[636, 212]",134832,True
+layers.1.swin2.attn.qkv.bias,layers.1.swin2.attn.qkv,[636],636,True
+layers.1.swin2.attn.proj.weight,layers.1.swin2.attn.proj,"[212, 212]",44944,True
+layers.1.swin2.attn.proj.bias,layers.1.swin2.attn.proj,[212],212,True
+layers.1.swin2.norm2.weight,layers.1.swin2.norm2,[212],212,True
+layers.1.swin2.norm2.bias,layers.1.swin2.norm2,[212],212,True
+layers.1.swin2.mlp.fc1.weight,layers.1.swin2.mlp.fc1,"[424, 212]",89888,True
+layers.1.swin2.mlp.fc1.bias,layers.1.swin2.mlp.fc1,[424],424,True
+layers.1.swin2.mlp.fc2.weight,layers.1.swin2.mlp.fc2,"[212, 424]",89888,True
+layers.1.swin2.mlp.fc2.bias,layers.1.swin2.mlp.fc2,[212],212,True
+layers.1.adjust2.weight,layers.1.adjust2,"[32, 212, 1, 1]",6784,True
+layers.1.adjust2.bias,layers.1.adjust2,[32],32,True
+layers.1.swin3.norm1.weight,layers.1.swin3.norm1,[244],244,True
+layers.1.swin3.norm1.bias,layers.1.swin3.norm1,[244],244,True
+layers.1.swin3.attn.relative_position_bias_table,layers.1.swin3.attn,"[961, 2]",1922,True
+layers.1.swin3.attn.qkv.weight,layers.1.swin3.attn.qkv,"[732, 244]",178608,True
+layers.1.swin3.attn.qkv.bias,layers.1.swin3.attn.qkv,[732],732,True
+layers.1.swin3.attn.proj.weight,layers.1.swin3.attn.proj,"[244, 244]",59536,True
+layers.1.swin3.attn.proj.bias,layers.1.swin3.attn.proj,[244],244,True
+layers.1.swin3.norm2.weight,layers.1.swin3.norm2,[244],244,True
+layers.1.swin3.norm2.bias,layers.1.swin3.norm2,[244],244,True
+layers.1.swin3.mlp.fc1.weight,layers.1.swin3.mlp.fc1,"[488, 244]",119072,True
+layers.1.swin3.mlp.fc1.bias,layers.1.swin3.mlp.fc1,[488],488,True
+layers.1.swin3.mlp.fc2.weight,layers.1.swin3.mlp.fc2,"[244, 488]",119072,True
+layers.1.swin3.mlp.fc2.bias,layers.1.swin3.mlp.fc2,[244],244,True
+layers.1.adjust3.weight,layers.1.adjust3,"[32, 244, 1, 1]",7808,True
+layers.1.adjust3.bias,layers.1.adjust3,[32],32,True
+layers.1.swin4.norm1.weight,layers.1.swin4.norm1,[276],276,True
+layers.1.swin4.norm1.bias,layers.1.swin4.norm1,[276],276,True
+layers.1.swin4.attn.relative_position_bias_table,layers.1.swin4.attn,"[961, 6]",5766,True
+layers.1.swin4.attn.qkv.weight,layers.1.swin4.attn.qkv,"[828, 276]",228528,True
+layers.1.swin4.attn.qkv.bias,layers.1.swin4.attn.qkv,[828],828,True
+layers.1.swin4.attn.proj.weight,layers.1.swin4.attn.proj,"[276, 276]",76176,True
+layers.1.swin4.attn.proj.bias,layers.1.swin4.attn.proj,[276],276,True
+layers.1.swin4.norm2.weight,layers.1.swin4.norm2,[276],276,True
+layers.1.swin4.norm2.bias,layers.1.swin4.norm2,[276],276,True
+layers.1.swin4.mlp.fc1.weight,layers.1.swin4.mlp.fc1,"[276, 276]",76176,True
+layers.1.swin4.mlp.fc1.bias,layers.1.swin4.mlp.fc1,[276],276,True
+layers.1.swin4.mlp.fc2.weight,layers.1.swin4.mlp.fc2,"[276, 276]",76176,True
+layers.1.swin4.mlp.fc2.bias,layers.1.swin4.mlp.fc2,[276],276,True
+layers.1.adjust4.weight,layers.1.adjust4,"[32, 276, 1, 1]",8832,True
+layers.1.adjust4.bias,layers.1.adjust4,[32],32,True
+layers.1.swin5.norm1.weight,layers.1.swin5.norm1,[308],308,True
+layers.1.swin5.norm1.bias,layers.1.swin5.norm1,[308],308,True
+layers.1.swin5.attn.relative_position_bias_table,layers.1.swin5.attn,"[961, 4]",3844,True
+layers.1.swin5.attn.qkv.weight,layers.1.swin5.attn.qkv,"[924, 308]",284592,True
+layers.1.swin5.attn.qkv.bias,layers.1.swin5.attn.qkv,[924],924,True
+layers.1.swin5.attn.proj.weight,layers.1.swin5.attn.proj,"[308, 308]",94864,True
+layers.1.swin5.attn.proj.bias,layers.1.swin5.attn.proj,[308],308,True
+layers.1.swin5.norm2.weight,layers.1.swin5.norm2,[308],308,True
+layers.1.swin5.norm2.bias,layers.1.swin5.norm2,[308],308,True
+layers.1.swin5.mlp.fc1.weight,layers.1.swin5.mlp.fc1,"[308, 308]",94864,True
+layers.1.swin5.mlp.fc1.bias,layers.1.swin5.mlp.fc1,[308],308,True
+layers.1.swin5.mlp.fc2.weight,layers.1.swin5.mlp.fc2,"[308, 308]",94864,True
+layers.1.swin5.mlp.fc2.bias,layers.1.swin5.mlp.fc2,[308],308,True
+layers.1.adjust5.weight,layers.1.adjust5,"[180, 308, 1, 1]",55440,True
+layers.1.adjust5.bias,layers.1.adjust5,[180],180,True
+layers.2.swin1.norm1.weight,layers.2.swin1.norm1,[180],180,True
+layers.2.swin1.norm1.bias,layers.2.swin1.norm1,[180],180,True
+layers.2.swin1.attn.relative_position_bias_table,layers.2.swin1.attn,"[961, 6]",5766,True
+layers.2.swin1.attn.qkv.weight,layers.2.swin1.attn.qkv,"[540, 180]",97200,True
+layers.2.swin1.attn.qkv.bias,layers.2.swin1.attn.qkv,[540],540,True
+layers.2.swin1.attn.proj.weight,layers.2.swin1.attn.proj,"[180, 180]",32400,True
+layers.2.swin1.attn.proj.bias,layers.2.swin1.attn.proj,[180],180,True
+layers.2.swin1.norm2.weight,layers.2.swin1.norm2,[180],180,True
+layers.2.swin1.norm2.bias,layers.2.swin1.norm2,[180],180,True
+layers.2.swin1.mlp.fc1.weight,layers.2.swin1.mlp.fc1,"[360, 180]",64800,True
+layers.2.swin1.mlp.fc1.bias,layers.2.swin1.mlp.fc1,[360],360,True
+layers.2.swin1.mlp.fc2.weight,layers.2.swin1.mlp.fc2,"[180, 360]",64800,True
+layers.2.swin1.mlp.fc2.bias,layers.2.swin1.mlp.fc2,[180],180,True
+layers.2.adjust1.weight,layers.2.adjust1,"[32, 180, 1, 1]",5760,True
+layers.2.adjust1.bias,layers.2.adjust1,[32],32,True
+layers.2.swin2.norm1.weight,layers.2.swin2.norm1,[212],212,True
+layers.2.swin2.norm1.bias,layers.2.swin2.norm1,[212],212,True
+layers.2.swin2.attn.relative_position_bias_table,layers.2.swin2.attn,"[961, 4]",3844,True
+layers.2.swin2.attn.qkv.weight,layers.2.swin2.attn.qkv,"[636, 212]",134832,True
+layers.2.swin2.attn.qkv.bias,layers.2.swin2.attn.qkv,[636],636,True
+layers.2.swin2.attn.proj.weight,layers.2.swin2.attn.proj,"[212, 212]",44944,True
+layers.2.swin2.attn.proj.bias,layers.2.swin2.attn.proj,[212],212,True
+layers.2.swin2.norm2.weight,layers.2.swin2.norm2,[212],212,True
+layers.2.swin2.norm2.bias,layers.2.swin2.norm2,[212],212,True
+layers.2.swin2.mlp.fc1.weight,layers.2.swin2.mlp.fc1,"[424, 212]",89888,True
+layers.2.swin2.mlp.fc1.bias,layers.2.swin2.mlp.fc1,[424],424,True
+layers.2.swin2.mlp.fc2.weight,layers.2.swin2.mlp.fc2,"[212, 424]",89888,True
+layers.2.swin2.mlp.fc2.bias,layers.2.swin2.mlp.fc2,[212],212,True
+layers.2.adjust2.weight,layers.2.adjust2,"[32, 212, 1, 1]",6784,True
+layers.2.adjust2.bias,layers.2.adjust2,[32],32,True
+layers.2.swin3.norm1.weight,layers.2.swin3.norm1,[244],244,True
+layers.2.swin3.norm1.bias,layers.2.swin3.norm1,[244],244,True
+layers.2.swin3.attn.relative_position_bias_table,layers.2.swin3.attn,"[961, 2]",1922,True
+layers.2.swin3.attn.qkv.weight,layers.2.swin3.attn.qkv,"[732, 244]",178608,True
+layers.2.swin3.attn.qkv.bias,layers.2.swin3.attn.qkv,[732],732,True
+layers.2.swin3.attn.proj.weight,layers.2.swin3.attn.proj,"[244, 244]",59536,True
+layers.2.swin3.attn.proj.bias,layers.2.swin3.attn.proj,[244],244,True
+layers.2.swin3.norm2.weight,layers.2.swin3.norm2,[244],244,True
+layers.2.swin3.norm2.bias,layers.2.swin3.norm2,[244],244,True
+layers.2.swin3.mlp.fc1.weight,layers.2.swin3.mlp.fc1,"[488, 244]",119072,True
+layers.2.swin3.mlp.fc1.bias,layers.2.swin3.mlp.fc1,[488],488,True
+layers.2.swin3.mlp.fc2.weight,layers.2.swin3.mlp.fc2,"[244, 488]",119072,True
+layers.2.swin3.mlp.fc2.bias,layers.2.swin3.mlp.fc2,[244],244,True
+layers.2.adjust3.weight,layers.2.adjust3,"[32, 244, 1, 1]",7808,True
+layers.2.adjust3.bias,layers.2.adjust3,[32],32,True
+layers.2.swin4.norm1.weight,layers.2.swin4.norm1,[276],276,True
+layers.2.swin4.norm1.bias,layers.2.swin4.norm1,[276],276,True
+layers.2.swin4.attn.relative_position_bias_table,layers.2.swin4.attn,"[961, 6]",5766,True
+layers.2.swin4.attn.qkv.weight,layers.2.swin4.attn.qkv,"[828, 276]",228528,True
+layers.2.swin4.attn.qkv.bias,layers.2.swin4.attn.qkv,[828],828,True
+layers.2.swin4.attn.proj.weight,layers.2.swin4.attn.proj,"[276, 276]",76176,True
+layers.2.swin4.attn.proj.bias,layers.2.swin4.attn.proj,[276],276,True
+layers.2.swin4.norm2.weight,layers.2.swin4.norm2,[276],276,True
+layers.2.swin4.norm2.bias,layers.2.swin4.norm2,[276],276,True
+layers.2.swin4.mlp.fc1.weight,layers.2.swin4.mlp.fc1,"[276, 276]",76176,True
+layers.2.swin4.mlp.fc1.bias,layers.2.swin4.mlp.fc1,[276],276,True
+layers.2.swin4.mlp.fc2.weight,layers.2.swin4.mlp.fc2,"[276, 276]",76176,True
+layers.2.swin4.mlp.fc2.bias,layers.2.swin4.mlp.fc2,[276],276,True
+layers.2.adjust4.weight,layers.2.adjust4,"[32, 276, 1, 1]",8832,True
+layers.2.adjust4.bias,layers.2.adjust4,[32],32,True
+layers.2.swin5.norm1.weight,layers.2.swin5.norm1,[308],308,True
+layers.2.swin5.norm1.bias,layers.2.swin5.norm1,[308],308,True
+layers.2.swin5.attn.relative_position_bias_table,layers.2.swin5.attn,"[961, 4]",3844,True
+layers.2.swin5.attn.qkv.weight,layers.2.swin5.attn.qkv,"[924, 308]",284592,True
+layers.2.swin5.attn.qkv.bias,layers.2.swin5.attn.qkv,[924],924,True
+layers.2.swin5.attn.proj.weight,layers.2.swin5.attn.proj,"[308, 308]",94864,True
+layers.2.swin5.attn.proj.bias,layers.2.swin5.attn.proj,[308],308,True
+layers.2.swin5.norm2.weight,layers.2.swin5.norm2,[308],308,True
+layers.2.swin5.norm2.bias,layers.2.swin5.norm2,[308],308,True
+layers.2.swin5.mlp.fc1.weight,layers.2.swin5.mlp.fc1,"[308, 308]",94864,True
+layers.2.swin5.mlp.fc1.bias,layers.2.swin5.mlp.fc1,[308],308,True
+layers.2.swin5.mlp.fc2.weight,layers.2.swin5.mlp.fc2,"[308, 308]",94864,True
+layers.2.swin5.mlp.fc2.bias,layers.2.swin5.mlp.fc2,[308],308,True
+layers.2.adjust5.weight,layers.2.adjust5,"[180, 308, 1, 1]",55440,True
+layers.2.adjust5.bias,layers.2.adjust5,[180],180,True
+layers.3.swin1.norm1.weight,layers.3.swin1.norm1,[180],180,True
+layers.3.swin1.norm1.bias,layers.3.swin1.norm1,[180],180,True
+layers.3.swin1.attn.relative_position_bias_table,layers.3.swin1.attn,"[961, 6]",5766,True
+layers.3.swin1.attn.qkv.weight,layers.3.swin1.attn.qkv,"[540, 180]",97200,True
+layers.3.swin1.attn.qkv.bias,layers.3.swin1.attn.qkv,[540],540,True
+layers.3.swin1.attn.proj.weight,layers.3.swin1.attn.proj,"[180, 180]",32400,True
+layers.3.swin1.attn.proj.bias,layers.3.swin1.attn.proj,[180],180,True
+layers.3.swin1.norm2.weight,layers.3.swin1.norm2,[180],180,True
+layers.3.swin1.norm2.bias,layers.3.swin1.norm2,[180],180,True
+layers.3.swin1.mlp.fc1.weight,layers.3.swin1.mlp.fc1,"[360, 180]",64800,True
+layers.3.swin1.mlp.fc1.bias,layers.3.swin1.mlp.fc1,[360],360,True
+layers.3.swin1.mlp.fc2.weight,layers.3.swin1.mlp.fc2,"[180, 360]",64800,True
+layers.3.swin1.mlp.fc2.bias,layers.3.swin1.mlp.fc2,[180],180,True
+layers.3.adjust1.weight,layers.3.adjust1,"[32, 180, 1, 1]",5760,True
+layers.3.adjust1.bias,layers.3.adjust1,[32],32,True
+layers.3.swin2.norm1.weight,layers.3.swin2.norm1,[212],212,True
+layers.3.swin2.norm1.bias,layers.3.swin2.norm1,[212],212,True
+layers.3.swin2.attn.relative_position_bias_table,layers.3.swin2.attn,"[961, 4]",3844,True
+layers.3.swin2.attn.qkv.weight,layers.3.swin2.attn.qkv,"[636, 212]",134832,True
+layers.3.swin2.attn.qkv.bias,layers.3.swin2.attn.qkv,[636],636,True
+layers.3.swin2.attn.proj.weight,layers.3.swin2.attn.proj,"[212, 212]",44944,True
+layers.3.swin2.attn.proj.bias,layers.3.swin2.attn.proj,[212],212,True
+layers.3.swin2.norm2.weight,layers.3.swin2.norm2,[212],212,True
+layers.3.swin2.norm2.bias,layers.3.swin2.norm2,[212],212,True
+layers.3.swin2.mlp.fc1.weight,layers.3.swin2.mlp.fc1,"[424, 212]",89888,True
+layers.3.swin2.mlp.fc1.bias,layers.3.swin2.mlp.fc1,[424],424,True
+layers.3.swin2.mlp.fc2.weight,layers.3.swin2.mlp.fc2,"[212, 424]",89888,True
+layers.3.swin2.mlp.fc2.bias,layers.3.swin2.mlp.fc2,[212],212,True
+layers.3.adjust2.weight,layers.3.adjust2,"[32, 212, 1, 1]",6784,True
+layers.3.adjust2.bias,layers.3.adjust2,[32],32,True
+layers.3.swin3.norm1.weight,layers.3.swin3.norm1,[244],244,True
+layers.3.swin3.norm1.bias,layers.3.swin3.norm1,[244],244,True
+layers.3.swin3.attn.relative_position_bias_table,layers.3.swin3.attn,"[961, 2]",1922,True
+layers.3.swin3.attn.qkv.weight,layers.3.swin3.attn.qkv,"[732, 244]",178608,True
+layers.3.swin3.attn.qkv.bias,layers.3.swin3.attn.qkv,[732],732,True
+layers.3.swin3.attn.proj.weight,layers.3.swin3.attn.proj,"[244, 244]",59536,True
+layers.3.swin3.attn.proj.bias,layers.3.swin3.attn.proj,[244],244,True
+layers.3.swin3.norm2.weight,layers.3.swin3.norm2,[244],244,True
+layers.3.swin3.norm2.bias,layers.3.swin3.norm2,[244],244,True
+layers.3.swin3.mlp.fc1.weight,layers.3.swin3.mlp.fc1,"[488, 244]",119072,True
+layers.3.swin3.mlp.fc1.bias,layers.3.swin3.mlp.fc1,[488],488,True
+layers.3.swin3.mlp.fc2.weight,layers.3.swin3.mlp.fc2,"[244, 488]",119072,True
+layers.3.swin3.mlp.fc2.bias,layers.3.swin3.mlp.fc2,[244],244,True
+layers.3.adjust3.weight,layers.3.adjust3,"[32, 244, 1, 1]",7808,True
+layers.3.adjust3.bias,layers.3.adjust3,[32],32,True
+layers.3.swin4.norm1.weight,layers.3.swin4.norm1,[276],276,True
+layers.3.swin4.norm1.bias,layers.3.swin4.norm1,[276],276,True
+layers.3.swin4.attn.relative_position_bias_table,layers.3.swin4.attn,"[961, 6]",5766,True
+layers.3.swin4.attn.qkv.weight,layers.3.swin4.attn.qkv,"[828, 276]",228528,True
+layers.3.swin4.attn.qkv.bias,layers.3.swin4.attn.qkv,[828],828,True
+layers.3.swin4.attn.proj.weight,layers.3.swin4.attn.proj,"[276, 276]",76176,True
+layers.3.swin4.attn.proj.bias,layers.3.swin4.attn.proj,[276],276,True
+layers.3.swin4.norm2.weight,layers.3.swin4.norm2,[276],276,True
+layers.3.swin4.norm2.bias,layers.3.swin4.norm2,[276],276,True
+layers.3.swin4.mlp.fc1.weight,layers.3.swin4.mlp.fc1,"[276, 276]",76176,True
+layers.3.swin4.mlp.fc1.bias,layers.3.swin4.mlp.fc1,[276],276,True
+layers.3.swin4.mlp.fc2.weight,layers.3.swin4.mlp.fc2,"[276, 276]",76176,True
+layers.3.swin4.mlp.fc2.bias,layers.3.swin4.mlp.fc2,[276],276,True
+layers.3.adjust4.weight,layers.3.adjust4,"[32, 276, 1, 1]",8832,True
+layers.3.adjust4.bias,layers.3.adjust4,[32],32,True
+layers.3.swin5.norm1.weight,layers.3.swin5.norm1,[308],308,True
+layers.3.swin5.norm1.bias,layers.3.swin5.norm1,[308],308,True
+layers.3.swin5.attn.relative_position_bias_table,layers.3.swin5.attn,"[961, 4]",3844,True
+layers.3.swin5.attn.qkv.weight,layers.3.swin5.attn.qkv,"[924, 308]",284592,True
+layers.3.swin5.attn.qkv.bias,layers.3.swin5.attn.qkv,[924],924,True
+layers.3.swin5.attn.proj.weight,layers.3.swin5.attn.proj,"[308, 308]",94864,True
+layers.3.swin5.attn.proj.bias,layers.3.swin5.attn.proj,[308],308,True
+layers.3.swin5.norm2.weight,layers.3.swin5.norm2,[308],308,True
+layers.3.swin5.norm2.bias,layers.3.swin5.norm2,[308],308,True
+layers.3.swin5.mlp.fc1.weight,layers.3.swin5.mlp.fc1,"[308, 308]",94864,True
+layers.3.swin5.mlp.fc1.bias,layers.3.swin5.mlp.fc1,[308],308,True
+layers.3.swin5.mlp.fc2.weight,layers.3.swin5.mlp.fc2,"[308, 308]",94864,True
+layers.3.swin5.mlp.fc2.bias,layers.3.swin5.mlp.fc2,[308],308,True
+layers.3.adjust5.weight,layers.3.adjust5,"[180, 308, 1, 1]",55440,True
+layers.3.adjust5.bias,layers.3.adjust5,[180],180,True
+layers.4.swin1.norm1.weight,layers.4.swin1.norm1,[180],180,True
+layers.4.swin1.norm1.bias,layers.4.swin1.norm1,[180],180,True
+layers.4.swin1.attn.relative_position_bias_table,layers.4.swin1.attn,"[961, 6]",5766,True
+layers.4.swin1.attn.qkv.weight,layers.4.swin1.attn.qkv,"[540, 180]",97200,True
+layers.4.swin1.attn.qkv.bias,layers.4.swin1.attn.qkv,[540],540,True
+layers.4.swin1.attn.proj.weight,layers.4.swin1.attn.proj,"[180, 180]",32400,True
+layers.4.swin1.attn.proj.bias,layers.4.swin1.attn.proj,[180],180,True
+layers.4.swin1.norm2.weight,layers.4.swin1.norm2,[180],180,True
+layers.4.swin1.norm2.bias,layers.4.swin1.norm2,[180],180,True
+layers.4.swin1.mlp.fc1.weight,layers.4.swin1.mlp.fc1,"[360, 180]",64800,True
+layers.4.swin1.mlp.fc1.bias,layers.4.swin1.mlp.fc1,[360],360,True
+layers.4.swin1.mlp.fc2.weight,layers.4.swin1.mlp.fc2,"[180, 360]",64800,True
+layers.4.swin1.mlp.fc2.bias,layers.4.swin1.mlp.fc2,[180],180,True
+layers.4.adjust1.weight,layers.4.adjust1,"[32, 180, 1, 1]",5760,True
+layers.4.adjust1.bias,layers.4.adjust1,[32],32,True
+layers.4.swin2.norm1.weight,layers.4.swin2.norm1,[212],212,True
+layers.4.swin2.norm1.bias,layers.4.swin2.norm1,[212],212,True
+layers.4.swin2.attn.relative_position_bias_table,layers.4.swin2.attn,"[961, 4]",3844,True
+layers.4.swin2.attn.qkv.weight,layers.4.swin2.attn.qkv,"[636, 212]",134832,True
+layers.4.swin2.attn.qkv.bias,layers.4.swin2.attn.qkv,[636],636,True
+layers.4.swin2.attn.proj.weight,layers.4.swin2.attn.proj,"[212, 212]",44944,True
+layers.4.swin2.attn.proj.bias,layers.4.swin2.attn.proj,[212],212,True
+layers.4.swin2.norm2.weight,layers.4.swin2.norm2,[212],212,True
+layers.4.swin2.norm2.bias,layers.4.swin2.norm2,[212],212,True
+layers.4.swin2.mlp.fc1.weight,layers.4.swin2.mlp.fc1,"[424, 212]",89888,True
+layers.4.swin2.mlp.fc1.bias,layers.4.swin2.mlp.fc1,[424],424,True
+layers.4.swin2.mlp.fc2.weight,layers.4.swin2.mlp.fc2,"[212, 424]",89888,True
+layers.4.swin2.mlp.fc2.bias,layers.4.swin2.mlp.fc2,[212],212,True
+layers.4.adjust2.weight,layers.4.adjust2,"[32, 212, 1, 1]",6784,True
+layers.4.adjust2.bias,layers.4.adjust2,[32],32,True
+layers.4.swin3.norm1.weight,layers.4.swin3.norm1,[244],244,True
+layers.4.swin3.norm1.bias,layers.4.swin3.norm1,[244],244,True
+layers.4.swin3.attn.relative_position_bias_table,layers.4.swin3.attn,"[961, 2]",1922,True
+layers.4.swin3.attn.qkv.weight,layers.4.swin3.attn.qkv,"[732, 244]",178608,True
+layers.4.swin3.attn.qkv.bias,layers.4.swin3.attn.qkv,[732],732,True
+layers.4.swin3.attn.proj.weight,layers.4.swin3.attn.proj,"[244, 244]",59536,True
+layers.4.swin3.attn.proj.bias,layers.4.swin3.attn.proj,[244],244,True
+layers.4.swin3.norm2.weight,layers.4.swin3.norm2,[244],244,True
+layers.4.swin3.norm2.bias,layers.4.swin3.norm2,[244],244,True
+layers.4.swin3.mlp.fc1.weight,layers.4.swin3.mlp.fc1,"[488, 244]",119072,True
+layers.4.swin3.mlp.fc1.bias,layers.4.swin3.mlp.fc1,[488],488,True
+layers.4.swin3.mlp.fc2.weight,layers.4.swin3.mlp.fc2,"[244, 488]",119072,True
+layers.4.swin3.mlp.fc2.bias,layers.4.swin3.mlp.fc2,[244],244,True
+layers.4.adjust3.weight,layers.4.adjust3,"[32, 244, 1, 1]",7808,True
+layers.4.adjust3.bias,layers.4.adjust3,[32],32,True
+layers.4.swin4.norm1.weight,layers.4.swin4.norm1,[276],276,True
+layers.4.swin4.norm1.bias,layers.4.swin4.norm1,[276],276,True
+layers.4.swin4.attn.relative_position_bias_table,layers.4.swin4.attn,"[961, 6]",5766,True
+layers.4.swin4.attn.qkv.weight,layers.4.swin4.attn.qkv,"[828, 276]",228528,True
+layers.4.swin4.attn.qkv.bias,layers.4.swin4.attn.qkv,[828],828,True
+layers.4.swin4.attn.proj.weight,layers.4.swin4.attn.proj,"[276, 276]",76176,True
+layers.4.swin4.attn.proj.bias,layers.4.swin4.attn.proj,[276],276,True
+layers.4.swin4.norm2.weight,layers.4.swin4.norm2,[276],276,True
+layers.4.swin4.norm2.bias,layers.4.swin4.norm2,[276],276,True
+layers.4.swin4.mlp.fc1.weight,layers.4.swin4.mlp.fc1,"[276, 276]",76176,True
+layers.4.swin4.mlp.fc1.bias,layers.4.swin4.mlp.fc1,[276],276,True
+layers.4.swin4.mlp.fc2.weight,layers.4.swin4.mlp.fc2,"[276, 276]",76176,True
+layers.4.swin4.mlp.fc2.bias,layers.4.swin4.mlp.fc2,[276],276,True
+layers.4.adjust4.weight,layers.4.adjust4,"[32, 276, 1, 1]",8832,True
+layers.4.adjust4.bias,layers.4.adjust4,[32],32,True
+layers.4.swin5.norm1.weight,layers.4.swin5.norm1,[308],308,True
+layers.4.swin5.norm1.bias,layers.4.swin5.norm1,[308],308,True
+layers.4.swin5.attn.relative_position_bias_table,layers.4.swin5.attn,"[961, 4]",3844,True
+layers.4.swin5.attn.qkv.weight,layers.4.swin5.attn.qkv,"[924, 308]",284592,True
+layers.4.swin5.attn.qkv.bias,layers.4.swin5.attn.qkv,[924],924,True
+layers.4.swin5.attn.proj.weight,layers.4.swin5.attn.proj,"[308, 308]",94864,True
+layers.4.swin5.attn.proj.bias,layers.4.swin5.attn.proj,[308],308,True
+layers.4.swin5.norm2.weight,layers.4.swin5.norm2,[308],308,True
+layers.4.swin5.norm2.bias,layers.4.swin5.norm2,[308],308,True
+layers.4.swin5.mlp.fc1.weight,layers.4.swin5.mlp.fc1,"[308, 308]",94864,True
+layers.4.swin5.mlp.fc1.bias,layers.4.swin5.mlp.fc1,[308],308,True
+layers.4.swin5.mlp.fc2.weight,layers.4.swin5.mlp.fc2,"[308, 308]",94864,True
+layers.4.swin5.mlp.fc2.bias,layers.4.swin5.mlp.fc2,[308],308,True
+layers.4.adjust5.weight,layers.4.adjust5,"[180, 308, 1, 1]",55440,True
+layers.4.adjust5.bias,layers.4.adjust5,[180],180,True
+layers.5.swin1.norm1.weight,layers.5.swin1.norm1,[180],180,True
+layers.5.swin1.norm1.bias,layers.5.swin1.norm1,[180],180,True
+layers.5.swin1.attn.relative_position_bias_table,layers.5.swin1.attn,"[961, 6]",5766,True
+layers.5.swin1.attn.qkv.weight,layers.5.swin1.attn.qkv,"[540, 180]",97200,True
+layers.5.swin1.attn.qkv.bias,layers.5.swin1.attn.qkv,[540],540,True
+layers.5.swin1.attn.proj.weight,layers.5.swin1.attn.proj,"[180, 180]",32400,True
+layers.5.swin1.attn.proj.bias,layers.5.swin1.attn.proj,[180],180,True
+layers.5.swin1.norm2.weight,layers.5.swin1.norm2,[180],180,True
+layers.5.swin1.norm2.bias,layers.5.swin1.norm2,[180],180,True
+layers.5.swin1.mlp.fc1.weight,layers.5.swin1.mlp.fc1,"[360, 180]",64800,True
+layers.5.swin1.mlp.fc1.bias,layers.5.swin1.mlp.fc1,[360],360,True
+layers.5.swin1.mlp.fc2.weight,layers.5.swin1.mlp.fc2,"[180, 360]",64800,True
+layers.5.swin1.mlp.fc2.bias,layers.5.swin1.mlp.fc2,[180],180,True
+layers.5.adjust1.weight,layers.5.adjust1,"[32, 180, 1, 1]",5760,True
+layers.5.adjust1.bias,layers.5.adjust1,[32],32,True
+layers.5.swin2.norm1.weight,layers.5.swin2.norm1,[212],212,True
+layers.5.swin2.norm1.bias,layers.5.swin2.norm1,[212],212,True
+layers.5.swin2.attn.relative_position_bias_table,layers.5.swin2.attn,"[961, 4]",3844,True
+layers.5.swin2.attn.qkv.weight,layers.5.swin2.attn.qkv,"[636, 212]",134832,True
+layers.5.swin2.attn.qkv.bias,layers.5.swin2.attn.qkv,[636],636,True
+layers.5.swin2.attn.proj.weight,layers.5.swin2.attn.proj,"[212, 212]",44944,True
+layers.5.swin2.attn.proj.bias,layers.5.swin2.attn.proj,[212],212,True
+layers.5.swin2.norm2.weight,layers.5.swin2.norm2,[212],212,True
+layers.5.swin2.norm2.bias,layers.5.swin2.norm2,[212],212,True
+layers.5.swin2.mlp.fc1.weight,layers.5.swin2.mlp.fc1,"[424, 212]",89888,True
+layers.5.swin2.mlp.fc1.bias,layers.5.swin2.mlp.fc1,[424],424,True
+layers.5.swin2.mlp.fc2.weight,layers.5.swin2.mlp.fc2,"[212, 424]",89888,True
+layers.5.swin2.mlp.fc2.bias,layers.5.swin2.mlp.fc2,[212],212,True
+layers.5.adjust2.weight,layers.5.adjust2,"[32, 212, 1, 1]",6784,True
+layers.5.adjust2.bias,layers.5.adjust2,[32],32,True
+layers.5.swin3.norm1.weight,layers.5.swin3.norm1,[244],244,True
+layers.5.swin3.norm1.bias,layers.5.swin3.norm1,[244],244,True
+layers.5.swin3.attn.relative_position_bias_table,layers.5.swin3.attn,"[961, 2]",1922,True
+layers.5.swin3.attn.qkv.weight,layers.5.swin3.attn.qkv,"[732, 244]",178608,True
+layers.5.swin3.attn.qkv.bias,layers.5.swin3.attn.qkv,[732],732,True
+layers.5.swin3.attn.proj.weight,layers.5.swin3.attn.proj,"[244, 244]",59536,True
+layers.5.swin3.attn.proj.bias,layers.5.swin3.attn.proj,[244],244,True
+layers.5.swin3.norm2.weight,layers.5.swin3.norm2,[244],244,True
+layers.5.swin3.norm2.bias,layers.5.swin3.norm2,[244],244,True
+layers.5.swin3.mlp.fc1.weight,layers.5.swin3.mlp.fc1,"[488, 244]",119072,True
+layers.5.swin3.mlp.fc1.bias,layers.5.swin3.mlp.fc1,[488],488,True
+layers.5.swin3.mlp.fc2.weight,layers.5.swin3.mlp.fc2,"[244, 488]",119072,True
+layers.5.swin3.mlp.fc2.bias,layers.5.swin3.mlp.fc2,[244],244,True
+layers.5.adjust3.weight,layers.5.adjust3,"[32, 244, 1, 1]",7808,True
+layers.5.adjust3.bias,layers.5.adjust3,[32],32,True
+layers.5.swin4.norm1.weight,layers.5.swin4.norm1,[276],276,True
+layers.5.swin4.norm1.bias,layers.5.swin4.norm1,[276],276,True
+layers.5.swin4.attn.relative_position_bias_table,layers.5.swin4.attn,"[961, 6]",5766,True
+layers.5.swin4.attn.qkv.weight,layers.5.swin4.attn.qkv,"[828, 276]",228528,True
+layers.5.swin4.attn.qkv.bias,layers.5.swin4.attn.qkv,[828],828,True
+layers.5.swin4.attn.proj.weight,layers.5.swin4.attn.proj,"[276, 276]",76176,True
+layers.5.swin4.attn.proj.bias,layers.5.swin4.attn.proj,[276],276,True
+layers.5.swin4.norm2.weight,layers.5.swin4.norm2,[276],276,True
+layers.5.swin4.norm2.bias,layers.5.swin4.norm2,[276],276,True
+layers.5.swin4.mlp.fc1.weight,layers.5.swin4.mlp.fc1,"[276, 276]",76176,True
+layers.5.swin4.mlp.fc1.bias,layers.5.swin4.mlp.fc1,[276],276,True
+layers.5.swin4.mlp.fc2.weight,layers.5.swin4.mlp.fc2,"[276, 276]",76176,True
+layers.5.swin4.mlp.fc2.bias,layers.5.swin4.mlp.fc2,[276],276,True
+layers.5.adjust4.weight,layers.5.adjust4,"[32, 276, 1, 1]",8832,True
+layers.5.adjust4.bias,layers.5.adjust4,[32],32,True
+layers.5.swin5.norm1.weight,layers.5.swin5.norm1,[308],308,True
+layers.5.swin5.norm1.bias,layers.5.swin5.norm1,[308],308,True
+layers.5.swin5.attn.relative_position_bias_table,layers.5.swin5.attn,"[961, 4]",3844,True
+layers.5.swin5.attn.qkv.weight,layers.5.swin5.attn.qkv,"[924, 308]",284592,True
+layers.5.swin5.attn.qkv.bias,layers.5.swin5.attn.qkv,[924],924,True
+layers.5.swin5.attn.proj.weight,layers.5.swin5.attn.proj,"[308, 308]",94864,True
+layers.5.swin5.attn.proj.bias,layers.5.swin5.attn.proj,[308],308,True
+layers.5.swin5.norm2.weight,layers.5.swin5.norm2,[308],308,True
+layers.5.swin5.norm2.bias,layers.5.swin5.norm2,[308],308,True
+layers.5.swin5.mlp.fc1.weight,layers.5.swin5.mlp.fc1,"[308, 308]",94864,True
+layers.5.swin5.mlp.fc1.bias,layers.5.swin5.mlp.fc1,[308],308,True
+layers.5.swin5.mlp.fc2.weight,layers.5.swin5.mlp.fc2,"[308, 308]",94864,True
+layers.5.swin5.mlp.fc2.bias,layers.5.swin5.mlp.fc2,[308],308,True
+layers.5.adjust5.weight,layers.5.adjust5,"[180, 308, 1, 1]",55440,True
+layers.5.adjust5.bias,layers.5.adjust5,[180],180,True
+norm.weight,norm,[180],180,True
+norm.bias,norm,[180],180,True
+conv_after_body.weight,conv_after_body,"[180, 180, 3, 3]",291600,True
+conv_after_body.bias,conv_after_body,[180],180,True
+conv_before_upsample.0.weight,conv_before_upsample.0,"[64, 180, 3, 3]",103680,True
+conv_before_upsample.0.bias,conv_before_upsample.0,[64],64,True
+upsample.0.weight,upsample.0,"[256, 64, 3, 3]",147456,True
+upsample.0.bias,upsample.0,[256],256,True
+upsample.2.weight,upsample.2,"[256, 64, 3, 3]",147456,True
+upsample.2.bias,upsample.2,[256],256,True
+conv_last.weight,conv_last,"[3, 64, 3, 3]",1728,True
+conv_last.bias,conv_last,[3],3,True

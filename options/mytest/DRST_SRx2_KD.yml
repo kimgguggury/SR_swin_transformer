@@ -1,0 +1,93 @@
+# =========================
+# DRCT KD test (STUDENT)
+# =========================
+
+# general settings
+name: test_DRCT_KD_SRx2
+model_type: SRModel
+scale: 2
+num_gpu: auto
+manual_seed: 0
+
+# -------------------------
+# datasets
+# -------------------------
+datasets:
+  test_1:
+    name: Set5
+    type: PairedImageDataset
+    dataroot_gt: ./datasets/Set5/HR
+    dataroot_lq: ./datasets/Set5/LR_bicubic/X2
+    filename_tmpl: '{}x2'
+    io_backend:
+      type: disk
+
+  test_2:
+    name: Set14
+    type: PairedImageDataset
+    dataroot_gt: ./datasets/Set14/HR
+    dataroot_lq: ./datasets/Set14/LR_bicubic/X2
+    filename_tmpl: '{}x2'
+    io_backend:
+      type: disk
+
+# -------------------------
+# student network (same as train network_g)
+# -------------------------
+network_g:
+  type: KDDRCT
+  upscale: 2
+  in_chans: 3
+  img_size: 64
+  window_size: 8
+  compress_ratio: 3
+  squeeze_factor: 30
+  conv_scale: 0.01
+  overlap_ratio: 0.5
+  img_range: 1.0
+  depths: [6, 6, 6, 6]
+  embed_dim: 96
+  num_heads: [6, 6, 6, 6]
+  mlp_ratio: 2
+  upsampler: 'pixelshuffle'
+  resi_connection: '1conv'
+
+# -------------------------
+# paths
+# -------------------------
+path:
+ 
+  pretrain_network_g: /home/vclab2080ti/Downloads/projects/DRCT/experiments/train_DRCT_KD_SRx2_df2k/models/net_g_latest.pth
+  param_key_g: 'params_ema'
+  strict_load_g: true
+
+# -------------------------
+# validation / test
+# -------------------------
+val:
+  save_img: true         # true로 하면 결과 이미지 저장
+  suffix: ~               # 필요하면 파일명 suffix
+  pbar: true
+
+  metrics:
+    psnr:
+      type: calculate_psnr
+      crop_border: 2
+      test_y_channel: true
+      better: higher
+    ssim:
+      type: calculate_ssim
+      crop_border: 2
+      test_y_channel: true
+      better: higher
+
+# -------------------------
+# logger
+# -------------------------
+logger:
+  print_freq: 100
+  use_tb_logger: false
+
+dist_params:
+  backend: nccl
+  port: 29500
