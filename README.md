@@ -28,6 +28,9 @@
 이 때 깃허브 프로젝트 페이지나 vscode의 확장 프로그램 중 하나를 이용하여, Pull Request를 실행한다.
 
 # 풀 리퀘스트 (pull request)
+깃허브 프로젝트 페이지가 접근성이 좋으므로, 이를 기준으로 설명하겠다.
+<img width="1020" height="293" alt="image" src="https://github.com/user-attachments/assets/61426083-2454-43bc-8b56-29d0737d4968" />
+
 1. 위 화면에서 Pull Requests를 클릭한다.
 2. New pull request를 클릭한다.
 3. base: develop 브랜치, compare: 내가 방금 push한 브랜치로 설정하고, create pull request 버튼을 클릭한다.
@@ -36,9 +39,6 @@
 6. merge를 누른다.
 
 # git pull
-깃허브 프로젝트 페이지가 접근성이 좋으므로, 이를 기준으로 설명하겠다.
-<img width="1020" height="293" alt="image" src="https://github.com/user-attachments/assets/61426083-2454-43bc-8b56-29d0737d4968" />
-
 이것은 중요한 작업이다. 이 작업을 생략할 경우, 업로드(push)가 제한될 수 있다.
 
 동현이는 A라는 파트를, 인욱이는 B라는 파트를 각자 구현하였고, push와 pull request를 통해 merge과정을 수행했다. 이렇게되면, develop 브랜치는 inyuk 브랜치와 donghyun 브랜치가 합쳐진 궁극의 브랜치가 되어있을 것이다.
