@@ -17,13 +17,13 @@
 
 (처음 업로드하는 경우에만) 로컬 저장소와 원격 저장소를 연결한다. % git remote add origin 주소
 
-(처음 업로드 하는 경우에만 사용해야 함) 깃에다 push 한다. % git push origin -u 브랜치명(sojung or donghyeon)
+(처음 업로드 하는 경우에만 사용해야 함) 깃에다 push 한다. % git push origin -u 브랜치명(inyuk or donghyeon)
 
-(처음 업로드 하는것이 아닌 경우) 깃에다 push 한다. % git push origin 브랜치명(sojung or donghyeon)
+(처음 업로드 하는것이 아닌 경우) 깃에다 push 한다. % git push origin 브랜치명(inyuk or donghyeon)
 
 -u 는 로컬 브랜치와 원격 브랜치를 연결한다는 의미다. 연결을 1번만 하면 계속 연결 상태가 유지되며, -u를 2번 이상 사용할 경우, 오히려 추적이 복잡해질 수 있다.
 
-이러면 방금 push한 개인 브랜치가 최신 버젼이 될 것이다. 그럼 develop 브랜치에서도 개인 브랜치의 업데이트를 적용시켜야 한다.
+이러면 방금 push한 개인 브랜치가 최신 버젼이 될 것이다. 그럼 main 브랜치에서도 개인 브랜치의 업데이트를 적용시켜야 한다.
 
 이 때 깃허브 프로젝트 페이지나 vscode의 확장 프로그램 중 하나를 이용하여, Pull Request를 실행한다.
 
@@ -33,7 +33,7 @@
 
 1. 위 화면에서 Pull Requests를 클릭한다.
 2. New pull request를 클릭한다.
-3. base: develop 브랜치, compare: 내가 방금 push한 브랜치로 설정하고, create pull request 버튼을 클릭한다.
+3. base: main 브랜치, compare: 내가 방금 push한 브랜치로 설정하고, create pull request 버튼을 클릭한다.
 4. 내용을 입력하고 pull requset를 올린다.
 5. (어려우면 안해도 됨) 서로 작성한 코드를 확인하여 리뷰를 진행한다.(평가, 궁금한 점 제시 등등)
 6. merge를 누른다.
@@ -41,25 +41,25 @@
 # git pull
 이것은 중요한 작업이다. 이 작업을 생략할 경우, 업로드(push)가 제한될 수 있다.
 
-동현이는 A라는 파트를, 인욱이는 B라는 파트를 각자 구현하였고, push와 pull request를 통해 merge과정을 수행했다. 이렇게되면, develop 브랜치는 inyuk 브랜치와 donghyun 브랜치가 합쳐진 궁극의 브랜치가 되어있을 것이다.
+동현이는 A라는 파트를, 인욱이는 B라는 파트를 각자 구현하였고, push와 pull request를 통해 merge과정을 수행했다. 이렇게되면, main 브랜치는 inyuk 브랜치와 donghyun 브랜치가 합쳐진 궁극의 브랜치가 되어있을 것이다.
 
-이제 인욱이는 C라는 파트를, 동현씨는 D라는 파트를 구현할 계획을 세웠다.
+이제 인욱이는 C라는 파트를, 동현이는 D라는 파트를 구현할 계획을 세웠다.
 
-이렇게 되면 인욱 브랜치는 A 파트만, 동현 브랜치는 B 파트만, develop 브랜치는 A, B 파트가 있는 상태이다.
+이렇게 되면 인욱 브랜치는 A 파트만, 동현 브랜치는 B 파트만, main 브랜치는 A, B 파트가 있는 상태이다.
 
-여기서 C, D 파트를 개발하기 전에, 인욱 브랜치와 동현 브랜치도 똑같이 A,B 파트를 가지도록 develop 브랜치와 동기화를 해야한다.
+여기서 C, D 파트를 개발하기 전에, 인욱 브랜치와 동현 브랜치도 똑같이 A,B 파트를 가지도록 main 브랜치와 동기화를 해야한다.
 
-이 과정을 수행하지 않으면, 다음 업로드에서 develop 버젼이 맞지 않아 오류가 발생할 수 있다.
+이 과정을 수행하지 않으면, 다음 업로드에서 main 버젼이 맞지 않아 오류가 발생할 수 있다.
 
 git pull을 하기위해 다음과 같은 과정을 거친다. 서로 개인 브랜치에서 작업한 상태이기에, 현재 브랜치는 개인 브랜치(인욱 or 동현)로 되어있을 것이다. (%git branch 명령어를 통해 확인할 수 있다.)
 
-develop 브랜치로 이동한다. % git checkout develop
+develop 브랜치로 이동한다. % git checkout main
 
-git pull을 진행한다. % git pull origin develop
+git pull을 진행한다. % git pull origin main
 
 다시 개인 브랜치로 이동한다. % git checkout -
 
-merge를 실행한다. % git merge develop
+merge를 실행한다. % git merge main
 
 이제 각자 C, D 파트 개발을 진행하면 된다.
 
@@ -70,19 +70,19 @@ merge를 실행한다. % git merge develop
 
 현재 개발중인 A 파트를 A', 현재 개발중인 B 파트를 B'라고 하겠다.
 
-만약 이러한 경우가 생긴다면 develop 브랜치에 B' 만 업데이트시키고, 그것을 A에 받아와서 쓸 수 있다. 그래서, 위와 같은 과정으로 push와 pull request를 성공했다면, 인욱이는 임시로 B'를 받아와야한다.
+만약 이러한 경우가 생긴다면 main 브랜치에 B' 만 업데이트시키고, 그것을 A에 받아와서 쓸 수 있다. 그래서, 위와 같은 과정으로 push와 pull request를 성공했다면, 인욱이는 임시로 B'를 받아와야한다.
 
 이때 인욱이는
 
 임시 저장소를 생성한다. % git stash
 
-develop 브랜치로 이동한다. % git checkout develop
+main 브랜치로 이동한다. % git checkout main
 
-git pull을 진행한다. % git pull origin develop
+git pull을 진행한다. % git pull origin main
 
 다시 개인 브랜치로 이동한다. % git checkout -
 
-merge를 실행한다. % git merge develop
+merge를 실행한다. % git merge main
 
 임시 저장소를 삭제한다. % git stash pop
 
