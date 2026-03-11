@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SR Comparison Demo</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    html, body {
+      margin: 0;
+      padding: 0;
+      background: #0b0b0f;
+      color: #f5f5f7;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    }
+
+    body {
+      padding: 48px 20px 64px;
+    }
+
+    .container {
+      max-width: 1180px;
+      margin: 0 auto;
+    }
+
+    .hero {
+      margin-bottom: 36px;
+    }
+
+    .hero h1 {
+      margin: 0 0 10px;
+      font-size: clamp(32px, 5vw, 52px);
+      line-height: 1.08;
+      letter-spacing: -0.03em;
+    }
+
+    .hero p {
+      margin: 0;
+      color: #b8b8c2;
+      font-size: 16px;
+      line-height: 1.7;
+      max-width: 760px;
+    }
+
+    .section {
+      margin-top: 28px;
+      display: grid;
+      gap: 28px;
+    }
+
+    .card {
+      background: #14141a;
+      border: 1px solid rgba(255,255,255,0.08);
+      border-radius: 22px;
+      overflow: hidden;
+      box-shadow: 0 18px 50px rgba(0,0,0,0.35);
+    }
+
+    .card-header {
+      padding: 18px 20px 14px;
+      border-bottom: 1px solid rgba(255,255,255,0.06);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+
+    .card-title {
+      margin: 0;
+      font-size: 22px;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+    }
+
+    .card-subtitle {
+      font-size: 13px;
+      color: #a9a9b3;
+      background: rgba(255,255,255,0.05);
+      padding: 6px 10px;
+      border-radius: 999px;
+    }
+
+    .compare-wrap {
+      padding: 18px;
+    }
+
+    .compare {
+      position: relative;
+      width: 100%;
+      aspect-ratio: 16 / 9;
+      background: #0f0f14;
+      border-radius: 18px;
+      overflow: hidden;
+      user-select: none;
+      touch-action: none;
+      border: 1px solid rgba(255,255,255,0.06);
+    }
+
+    .compare img {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      background: #0f0f14;
+      pointer-events: none;
+    }
+
+    /* base image = Bicubic (left side meaning) */
+    .compare .img-base {
+      z-index: 1;
+    }
+
+    /* overlay image = SR, shown on the right side */
+    .compare .img-overlay {
+      z-index: 2;
+      clip-path: inset(0 0 0 50%);
+    }
+
+    .divider {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 50%;
+      width: 2px;
+      background: rgba(255,255,255,0.92);
+      transform: translateX(-1px);
+      z-index: 3;
+      pointer-events: none;
+      box-shadow: 0 0 10px rgba(255,255,255,0.3);
+    }
+
+    .handle {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 56px;
+      height: 56px;
+      border-radius: 999px;
+      z-index: 4;
+      pointer-events: none;
+      display: grid;
+      place-items: center;
+      background: rgba(14, 14, 20, 0.72);
+      border: 1px solid rgba(255,255,255,0.28);
+      backdrop-filter: blur(10px);
+      box-shadow:
+        0 10px 30px rgba(0,0,0,0.35),
+        inset 0 1px 0 rgba(255,255,255,0.12);
+    }
+
+    .handle::before {
+      content: "⇆";
+      font-size: 22px;
+      color: #ffffff;
+      line-height: 1;
+    }
+
+    .labels {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 12px;
+      margin-top: 14px;
+      padding: 0 4px;
+      font-size: 14px;
+      color: #d6d6de;
+    }
+
+    .label-left,
+    .label-right {
+      padding: 8px 12px;
+      border-radius: 999px;
+      background: rgba(255,255,255,0.05);
+      border: 1px solid rgba(255,255,255,0.06);
+    }
+
+    .footer-note {
+      margin-top: 42px;
+      color: #8f8f99;
+      font-size: 13px;
+      line-height: 1.7;
+    }
+
+    @media (max-width: 768px) {
+      body {
+        padding: 28px 14px 48px;
+      }
+
+      .card-header {
+        padding: 16px 16px 12px;
+      }
+
+      .compare-wrap {
+        padding: 14px;
+      }
+
+      .handle {
+        width: 50px;
+        height: 50px;
+      }
+
+      .card-title {
+        font-size: 20px;
+      }
+
+      .labels {
+        font-size: 13px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <section class="hero">
+      <h1>Super-Resolution Comparison Demo</h1>
+      <p>
+        각 비교 카드에서 중앙 핸들을 좌우로 드래그하면
+        <strong>왼쪽 Bicubic</strong>과 <strong>오른쪽 SR</strong> 결과를 확인할 수 있습니다.
+      </p>
+    </section>
+
+    <section class="section">
+      <!-- Set5 -->
+      <article class="card">
+        <div class="card-header">
+          <h2 class="card-title">Set5</h2>
+          <div class="card-subtitle">Bicubic vs SR</div>
+        </div>
+        <div class="compare-wrap">
+          <div class="compare" data-initial="50">
+            <img class="img-base" src="images/Set5/best_bicubic.png" alt="Set5 Bicubic" />
+            <img class="img-overlay" src="images/Set5/best_sr.png" alt="Set5 SR" />
+            <div class="divider"></div>
+            <div class="handle"></div>
+          </div>
+          <div class="labels">
+            <div class="label-left">Bicubic</div>
+            <div class="label-right">SR</div>
+          </div>
+        </div>
+      </article>
+
+      <!-- Set14 -->
+      <article class="card">
+        <div class="card-header">
+          <h2 class="card-title">Set14</h2>
+          <div class="card-subtitle">Bicubic vs SR</div>
+        </div>
+        <div class="compare-wrap">
+          <div class="compare" data-initial="50">
+            <img class="img-base" src="images/Set14/best_bicubic.png" alt="Set14 Bicubic" />
+            <img class="img-overlay" src="images/Set14/best_sr.png" alt="Set14 SR" />
+            <div class="divider"></div>
+            <div class="handle"></div>
+          </div>
+          <div class="labels">
+            <div class="label-left">Bicubic</div>
+            <div class="label-right">SR</div>
+          </div>
+        </div>
+      </article>
+
+      <!-- Urban100 -->
+      <article class="card">
+        <div class="card-header">
+          <h2 class="card-title">Urban100</h2>
+          <div class="card-subtitle">Bicubic vs SR</div>
+        </div>
+        <div class="compare-wrap">
+          <div class="compare" data-initial="50">
+            <img class="img-base" src="images/Urban100/best_bicubic.png" alt="Urban100 Bicubic" />
+            <img class="img-overlay" src="images/Urban100/best_sr.png" alt="Urban100 SR" />
+            <div class="divider"></div>
+            <div class="handle"></div>
+          </div>
+          <div class="labels">
+            <div class="label-left">Bicubic</div>
+            <div class="label-right">SR</div>
+          </div>
+        </div>
+      </article>
+
+      <!-- Manga109 -->
+      <article class="card">
+        <div class="card-header">
+          <h2 class="card-title">Manga109</h2>
+          <div class="card-subtitle">Bicubic vs SR</div>
+        </div>
+        <div class="compare-wrap">
+          <div class="compare" data-initial="50">
+            <img class="img-base" src="images/Manga109/best_bicubic.png" alt="Manga109 Bicubic" />
+            <img class="img-overlay" src="images/Manga109/best_sr.png" alt="Manga109 SR" />
+            <div class="divider"></div>
+            <div class="handle"></div>
+          </div>
+          <div class="labels">
+            <div class="label-left">Bicubic</div>
+            <div class="label-right">SR</div>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <div class="footer-note">
+      이미지가 보이지 않으면 <code>index.html</code>과 <code>images/...</code> 경로가 정확한지 먼저 확인하면 됩니다.
+    </div>
+  </div>
+
+  <script>
+    (function () {
+      function clamp(v, min, max) {
+        return Math.max(min, Math.min(max, v));
+      }
+
+      function setPosition(compare, pct) {
+        const overlay = compare.querySelector(".img-overlay");
+        const divider = compare.querySelector(".divider");
+        const handle = compare.querySelector(".handle");
+
+        const value = clamp(pct, 0, 100);
+
+        /* 오른쪽만 SR이 보이도록:
+           pct=50 -> overlay가 오른쪽 절반 표시
+           pct가 커질수록 왼쪽 경계가 오른쪽으로 이동
+        */
+        overlay.style.clipPath = `inset(0 0 0 ${value}%)`;
+        divider.style.left = `${value}%`;
+        handle.style.left = `${value}%`;
+        compare.dataset.position = value;
+      }
+
+      function attachCompare(compare) {
+        const initial = Number(compare.dataset.initial || 50);
+        setPosition(compare, initial);
+
+        let dragging = false;
+
+        function getPctFromEvent(e) {
+          const rect = compare.getBoundingClientRect();
+          return ((e.clientX - rect.left) / rect.width) * 100;
+        }
+
+        compare.addEventListener("pointerdown", (e) => {
+          dragging = true;
+          compare.setPointerCapture(e.pointerId);
+          setPosition(compare, getPctFromEvent(e));
+        });
+
+        compare.addEventListener("pointermove", (e) => {
+          if (!dragging) return;
+          setPosition(compare, getPctFromEvent(e));
+        });
+
+        compare.addEventListener("pointerup", () => {
+          dragging = false;
+        });
+
+        compare.addEventListener("pointercancel", () => {
+          dragging = false;
+        });
+
+        compare.addEventListener("pointerleave", () => {
+          dragging = false;
+        });
+      }
+
+      document.querySelectorAll(".compare").forEach(attachCompare);
+    })();
+  </script>
+</body>
+</html>
